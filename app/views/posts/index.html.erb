@@ -1,0 +1,14 @@
+<div class="main posts-index">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+        <h3>[件名]</h3>
+        <%= link_to(post.content, "/posts/#{post.id}") %>
+        <h3>[概要]</h3>
+        <%= link_to(post.apple, "/posts/#{post.id}") %>
+        <h3>[URL]</h3>
+        <%= link_to(post.banana, "#{post.banana}") %>
+      </div>
+    <% end %>
+  </div>
+</div>
